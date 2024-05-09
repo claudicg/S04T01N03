@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "77495faa-2016-4709-a1b8-acb5549b1457",
+		"name": "Project Gradle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34788365",
+		"_collection_link": "https://solar-rocket-915244.postman.co/workspace/ccg-Workspace~dd9b277a-a748-419d-a6ec-90eafd2fbe90/collection/34788365-77495faa-2016-4709-a1b8-acb5549b1457?action=share&source=collection_link&creator=34788365"
+	},
+	"item": [
+		{
+			"name": "greet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/HelloWorld?name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"HelloWorld"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "greet2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/HelloWorld/:name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"HelloWorld",
+						":name"
+					],
+					"variable": [
+						{
+							"key": "name",
+							"value": "Pepa"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
